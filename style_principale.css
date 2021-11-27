@@ -1,6 +1,7 @@
 body{
     background-color: #bdbdbd;
     margin: 0;
+    font-family: 'Nunito', sans-serif;
 }
 
 /*HEADER*/
@@ -9,17 +10,35 @@ header{
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.75),
-    rgba(0,0,0,0.75)),url(header2.jpg);
+    rgba(0,0,0,0.75)),url(img/header.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
 
-#logo{
-    color: white;
+.logo{
     cursor: pointer;
-    font-size: 35px;
 }
+
+.logo:hover{
+    text-decoration: underline;
+    text-decoration-color: chocolate;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+
+.logo h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    bottom: 25px;
+}
+
+
 
 ul{
     display: flex;  
@@ -34,7 +53,7 @@ nav{
     width: 85%;
     justify-content: space-between;
 }
-li{
+nav ul li{
     margin: 25px;
     position: relative;
 }
@@ -44,7 +63,7 @@ a{
     color: rgb(255, 255, 255);
 }
 
-li::after{
+nav ul li::after{
     content: '';
     height: 3px;
     width: 0%;
@@ -106,7 +125,7 @@ li:hover::after{
 
 #presentation{
     width: 85%;
-    height: 400px;
+    height: 350px;
     background-color: white;
     margin: 20px auto;
     padding-top: 50px;
@@ -118,15 +137,21 @@ li:hover::after{
     color:black;
     font-size: 50px;
     position: relative;
-    bottom: 30px;
+    bottom: 60px;
 }
 
 .text1{
-    padding-right: 400px;
-    padding: 40px;
-    margin-top: 50px;
-    margin-left: 10px;
+    padding: 30px;
+    position: relative;
+    bottom: 40px;
 }
+
+.text1::first-letter{
+    color: chocolate;
+    font-size: 50px;
+}
+
+
 
 #image1{
     width: 300px;
@@ -134,7 +159,7 @@ li:hover::after{
     margin-right: 30px;
     float: right;
     position: relative;
-    bottom: 50px;
+    bottom: 70px;
 }
 
 
@@ -173,8 +198,8 @@ td{
 }
 
 .border{
-    border: 1px  solid rgb(167, 167, 167);
-    
+    border: 1px  solid rgb(167, 167, 167); 
+    box-shadow: 1px 1px 16px #a7a7a7;
 }
 
 
@@ -184,12 +209,14 @@ td{
 }
 
 .border:hover{
-    box-shadow: 1px 2px 16px #000000;
+    box-shadow: 1px 1px 30px #1b1b1b;
     cursor: pointer;
     border: none;
-    background-color: #bdbdbd;
-    
-    text-shadow:0 0 2px chocolate,0 0 30px cornflowerblue,0px 0px 5px chocolate, 0 0 150px blue;
+}
+
+.border a:hover{
+    text-decoration: underline;
+    text-decoration-color: chocolate;
 }
 
 .border h4{
@@ -198,20 +225,57 @@ td{
     position: relative;
 }
 
-.border h4::after{
-    content: '';
-    width: 70%;
-    height: 4px;
-    background-color: chocolate;
-    position: absolute;
-    left: 15%;
-    bottom: -9px;
-}
 
 /*FOOTER*/
 
 footer{
     width: 100%;
-    height: 200px;
-    background-color: black
+    height: 150px;
+    background-color: black;
+    text-align: center;
+}
+
+
+footer h3{
+    color: white;
+    position: relative;
+    top: 40px;
+}
+
+footer ul{
+    width: 30%;
+    position: relative;
+    left: 41.5%;
+    top: 30px;
+}
+
+footer ul li{
+    margin: 5px;
+}
+
+footer ul li img{
+    width: 30px;
+    height: 30px;
+}
+
+/*HAUT*/
+
+#haut{
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: chocolate;
+    position: fixed;
+    left: 92%;
+    top: 85%;
+}
+
+#haut img{
+    width: 20px;
+    height: 30px;
+    position: relative;
+    top: 14px;
+    left: 20px;
+    color: white;
 }
