@@ -228,10 +228,10 @@ td{
 
 /*FOOTER*/
 
-footer{
+.footer_container{
     width: 100%;
     height: 150px;
-    background-color: black;
+    background-color: rgb(31, 31, 31);
     text-align: center;
 }
 
@@ -258,6 +258,23 @@ footer ul li img{
     height: 30px;
 }
 
+.copyright{
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.copyright p{
+    color: white;
+    position: absolute;
+    font-size: small;
+    left: 39%;
+}    
+
+
 /*HAUT*/
 
 #haut{
@@ -269,6 +286,7 @@ footer ul li img{
     position: fixed;
     left: 92%;
     top: 85%;
+    z-index: 2;
 }
 
 #haut img{

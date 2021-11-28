@@ -1,0 +1,234 @@
+body{
+    background-color: #bdbdbd;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*HEADER*/
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)),url(img/cap\ blanc\ header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.logo:hover{
+    text-decoration: underline;
+    text-decoration-color: chocolate;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+
+.logo h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    bottom: 25px;
+}
+
+
+
+ul{
+    display: flex;  
+    list-style-type: none;
+}
+
+nav{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 85%;
+    justify-content: space-between;
+}
+nav ul li{
+    margin: 25px;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: chocolate; 
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    transition: 0.5s;
+}
+
+li:hover::after{
+    width: 100%;
+}
+
+.container{
+    position: relative;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.container h1{
+    font-size: 70px;
+    position: relative;
+    top: 35px;
+    color: chocolate;
+}
+
+/*PRESENTATION*/
+
+#presentation{
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+    padding-top: 10px;
+}
+
+.titre2{
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    text-shadow:0 0 2px #FFD100,0 0 30px cornflowerblue,0px 0px 5px chocolate, 0 0 150px blue;
+}
+
+#presentation aside{
+    float: right;
+    position: relative;
+    right: 20px;
+}
+
+#presentation aside img{
+    width: 320px;
+    height: 320px;
+    z-index: 1;
+}
+
+#presentation p{
+    padding-right: 320px;
+    margin: 30px;
+    position: relative;
+    top: 100px;
+}
+
+#presentation iframe{
+    position: relative;
+    left: 20%;
+    top: 25%;
+    width: 60%;
+    height: 400px;
+}
+
+/*ACTIVITES*/
+
+#activites{
+    width: 100%;
+    height: 550px;
+    background-color: #bdbdbd;
+}
+
+#activites .act{
+    display: flex;
+    justify-content: center;
+}
+
+#activites .act div{
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 1px 1px 30px rgb(0, 0, 0);
+    padding: 20px;
+    margin: 50px;
+    width: 290px;
+    height: 290px;
+}
+
+#activites .act img{
+    width: 100%;
+    height: 70%;
+}
+
+#activites .act{
+    height: 20%;
+    text-decoration: 5px underline;
+    text-decoration-color: chocolate;
+    color: rgb(0, 0, 0);
+}
+
+/*AR*/
+
+#avis{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+}
+
+#avis .titre2{
+    top: 20px;
+}
+
+#avis table{
+    position: relative;
+    top: 40px;
+    left: 10%;
+}
+
+#avis table tr td{
+    border: 1px solid black;
+    width: 1000px;
+}
+
+.sous_titre_avis{
+    font-size: 40px;
+    text-align: center;
+}
+
+#P .sous_titre_avis{
+    color: green;
+}
+
+#N .sous_titre_avis{
+    color: red;
+}
+
+
+
+/*HAUT*/
+
+#haut{
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: chocolate;
+    position: fixed;
+    left: 92%;
+    top: 85%;
+    z-index: 2;
+}
+
+#haut img{
+    width: 20px;
+    height: 30px;
+    position: relative;
+    top: 14px;
+    left: 20px;
+    color: white;
+}
