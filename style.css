@@ -172,11 +172,11 @@ li:hover::after{
     color: rgb(0, 0, 0);
 }
 
-/*AR*/
+/*AVIS*/
 
 #avis{
     width: 100%;
-    height: 400px;
+    height: 800px;
     background-color: white;
 }
 
@@ -184,18 +184,20 @@ li:hover::after{
     top: 20px;
 }
 
-#avis table{
+#avis .table_mere{
     position: relative;
     top: 40px;
     left: 10%;
 }
 
-#avis table tr td{
-    border: 1px solid black;
+.table_mere tr td{
     width: 1000px;
+    max-height: 100px;
+    margin: 10px;
 }
 
 .sous_titre_avis{
+    
     font-size: 40px;
     text-align: center;
 }
@@ -208,6 +210,106 @@ li:hover::after{
     color: red;
 }
 
+
+
+.personne{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.personne:hover{
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+.personne .profil{
+    width: 80px;
+    height: 80px;
+    
+}
+
+.profil img{
+    width: 100%;
+    height: 100%;
+}
+
+.personne .avis_personne div{
+    width: 890px;
+    height: 60px;
+}
+
+.avis_personne div:first-child{
+    z-index: 1;
+}
+
+.avis_personne div:last-child{
+    position: relative;
+    bottom: 45px;
+    z-index: 2;
+}
+
+.etoile{
+    display: inline;
+    position: relative;
+    left: 16%;
+}
+
+.etoile img{
+    width: 25px;
+    height: 25px;
+    margin-left: -8px;
+}
+
+
+
+/*FOOTER*/
+
+.footer_container{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(31, 31, 31);
+    text-align: center;
+}
+
+
+footer h3{
+    color: white;
+    position: relative;
+    top: 40px;
+}
+
+footer ul{
+    width: 30%;
+    position: relative;
+    left: 41.5%;
+    top: 30px;
+}
+
+footer ul li{
+    margin: 5px;
+}
+
+footer ul li img{
+    width: 30px;
+    height: 30px;
+}
+
+.copyright{
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.copyright p{
+    color: white;
+    position: absolute;
+    font-size: small;
+    left: 39%;
+}
 
 
 /*HAUT*/
