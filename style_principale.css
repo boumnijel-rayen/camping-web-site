@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300;1,600&family=Poppins:wght@500&display=swap');
+
+
 body{
     background-color: #bdbdbd;
     margin: 0;
@@ -167,7 +170,7 @@ li:hover::after{
 
 #lieux{
     width: 85%;
-    height: 2400px;
+    height: 1900px;
     background-color: white;
     margin: 20px auto;
 }
@@ -182,6 +185,8 @@ table{
 
 #lieux .titre2{
     top:60px;
+    left: 15%;
+    width: 70%;
 }
 
 .titre3{

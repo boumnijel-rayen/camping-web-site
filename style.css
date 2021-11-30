@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300;1,600&family=Poppins:wght@500&display=swap');
+
 body{
-    background-color: #bdbdbd;
     margin: 0;
     font-family: 'Nunito', sans-serif;
 }
@@ -106,7 +107,7 @@ li:hover::after{
     text-align: center;
     font-size: 50px;
     position: relative;
-    text-shadow:0 0 2px #FFD100,0 0 30px cornflowerblue,0px 0px 5px chocolate, 0 0 150px blue;
+    text-shadow:0 0 2px #FFD100,0 0 30px cornflowerblue,0px 0px 5px chocolate;
 }
 
 #presentation aside{
@@ -128,10 +129,17 @@ li:hover::after{
     top: 100px;
 }
 
+.diff{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: brown;
+    font-weight: 700;
+}
+
 #presentation iframe{
     position: relative;
     left: 20%;
-    top: 25%;
+    top: 10%;
     width: 60%;
     height: 400px;
 }
@@ -142,6 +150,10 @@ li:hover::after{
     width: 100%;
     height: 550px;
     background-color: #bdbdbd;
+}
+
+#activites .titre2{
+    top: 20px;
 }
 
 #activites .act{
@@ -180,9 +192,6 @@ li:hover::after{
     background-color: white;
 }
 
-#avis .titre2{
-    top: 20px;
-}
 
 #avis .table_mere{
     position: relative;
@@ -261,7 +270,13 @@ li:hover::after{
     margin-left: -8px;
 }
 
+/*LOCALISATION*/
 
+#maps iframe{
+    width: 100%;
+    height: 430px;
+    margin-bottom: -25px;
+}
 
 /*FOOTER*/
 
