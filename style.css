@@ -10,11 +10,24 @@ body{
 header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),
-    rgba(0,0,0,0.75)),url(img/cap\ blanc\ header.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+}
+
+.header_capblanc{
+    background-image: linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)),url(img/cap\ blanc\ header.jpg);
+}
+
+.header_caphmem{
+    background-image: linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)),url(img/cap\ hmem\ header.jpg);
+}
+
+.header_ainjmil{
+    background-image: linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)),url(img/ain\ jmil\ header.jpg);
 }
 
 .logo{
