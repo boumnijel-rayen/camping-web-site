@@ -15,6 +15,21 @@ header{
     background-position: center;
 }
 
+.header_tastour{
+    background-image: linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)),url(img/tastour\ header.jpg);
+}
+
+.header_grotte{
+    background-image: linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)),url(img/Grotte\ Kriz\ header.jpg);
+}
+
+.header_benimtir{
+    background-image: linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)),url(img/beni\ mtir\ header.jpg);
+}
+
 .header_capblanc{
     background-image: linear-gradient(rgba(0,0,0,0.75),
     rgba(0,0,0,0.75)),url(img/cap\ blanc\ header.jpg);
